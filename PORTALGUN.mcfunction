@@ -6,7 +6,7 @@
 
 # 포탈건 지급
 
-# R !C
+# R !c
 replaceitem entity @a[tag=PORTALGUN_TOGGLE] hotbar.0 minecraft:crossbow{Tags:["PORTALGUN"], display:{Name:'[{"text":"★ ","bold":true,"color":"yellow"},{"text":"P","color":"#ffcc33"},{"text":"o","color":"#3366ff"},{"text":"r","color":"#ffcc33"},{"text":"t","color":"#3366ff"},{"text":"a","color":"#ffcc33"},{"text":"l ","color":"#3366ff"},{"text":"Gun ","color":"black"},{"text":"★"}]'}, Charged:1b,ChargedProjectiles:[{id:"minecraft:spectral_arrow",Count:1b}], HideFlags:96} 1
 
 
