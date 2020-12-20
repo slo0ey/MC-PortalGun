@@ -2,7 +2,7 @@
 # 사용전 README.md를 읽고 오세요
 
 # R(Repeatable)은 반복형 커맨드블럭, C(Chaining)은 연쇄형 커맨드블럭을 의미합니다
-# C는 조건형, !C는 무조건형을 의미합니다.
+# C(Condition)는 조건형, !C(Not Condition)는 무조건형을 의미합니다.
 
 # 포탈건 지급
 
