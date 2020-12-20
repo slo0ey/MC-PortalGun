@@ -10,6 +10,7 @@
 replaceitem entity @a[tag=PORTALGUN_TOGGLE] hotbar.0 minecraft:crossbow{Tags:["PORTALGUN"], display:{Name:'[{"text":"★ ","bold":true,"color":"yellow"},{"text":"P","color":"#ffcc33"},{"text":"o","color":"#3366ff"},{"text":"r","color":"#ffcc33"},{"text":"t","color":"#3366ff"},{"text":"a","color":"#ffcc33"},{"text":"l ","color":"#3366ff"},{"text":"Gun ","color":"black"},{"text":"★"}]'}, Charged:1b,ChargedProjectiles:[{id:"minecraft:spectral_arrow",Count:1b}], HideFlags:96} 1
 
 
+
 # 포탈 삭제템 지급
 
 # R !c
@@ -22,6 +23,7 @@ replaceitem entity @a[tag=PORTALGUN_DELETE_ALL] weapon.offhand air
 kill @e[type=minecraft:armor_stand, tag=PG_BULLET]
 # C c
 tag @a[tag=PORTALGUN_DELETE_ALL] remove PORTALGUN_DELETE_ALL
+
 
 
 # 포탈 1, 2 전환
@@ -49,6 +51,7 @@ tag @a[tag=PORTALGUN_SET_TO_M1] remove PORTALGUN_MODE2
 replaceitem entity @a[tag=PORTALGUN_SET_TO_M1] weapon.offhand air
 # C c
 tag @a[tag=PORTALGUN_SET_TO_M1] remove PORTALGUN_SET_TO_M1
+
 
 
 # 포탈건 ON, OFF 전환
@@ -92,6 +95,7 @@ replaceitem entity @a[tag=PORTALGUN_SET_TO_OFF] hotbar.2 air
 tag @a[tag=PORTALGUN_SET_TO_OFF] remove PORTALGUN_SET_TO_OFF
 
 
+
 # 분광화살에 태그 붙이기
 
 # R !c
@@ -99,6 +103,7 @@ execute at @a[tag=PORTALGUN_TOGGLE, tag=PORTALGUN_MODE1] run data merge entity @
 
 # R !c
 execute at @a[tag=PORTALGUN_TOGGLE, tag=PORTALGUN_MODE2] run data merge entity @e[type=minecraft:spectral_arrow, sort=nearest, limit=1, nbt={inGround:0b}] {Tags:["BULLET2"]}
+
 
 
 # 분광화살 꽂힌 지점에 포탈(갑옷거치대) 생성 + 이전꺼 삭제
@@ -118,6 +123,7 @@ execute at @e[type=minecraft:spectral_arrow, tag=BULLET2, nbt={inGround:1b}, lim
 execute as @e[type=minecraft:spectral_arrow, tag=BULLET2, nbt={inGround:1b}, limit=1, sort=nearest] run kill @s
 
 
+
 # 포탈에 있는 엔티티 텔레포트
 
 # R !c
@@ -133,6 +139,7 @@ execute at @e[type=minecraft:armor_stand, tag=BULLET2_SPOT, limit=1] run tag @e[
 execute at @e[type=minecraft:armor_stand, tag=BULLET1_SPOT, limit=1, sort=furthest] run tp @e[tag=TRAVELER2, limit=1, sort=furthest] ~ ~2 ~
 # C c
 tag @a[tag=TRAVELER2] remove TRAVELER2
+
 
 
 # 포탈에 이펙트 적용
